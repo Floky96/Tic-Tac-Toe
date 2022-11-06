@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+    <script src="./js/javascript.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="beforeStart" id="beforeStart">
+            <div class="p1Name">
+                P1 Name:
+                <textarea id="p1NameInput"></textarea>
+            </div>
+            <div class="p2Name">
+                P2 Name:
+                <textarea id="p2NameInput"></textarea>
+            </div>
+            <div class="startBtn" id="startBtn"">
+                Start
+            </div>
+        </div>
+
+        <div class=" loading" id="loading">
+                <div class="loadBar" id="myBar">0%</div>
+            </div>
+
+            <div class="afterStart" id="afterStart">
+                <div class="uiDisplay">
+                    <div class="upperUiDisplay">
+                        <div class="turnIndicator" id="turnIndicator">Turn: </div>
+                    </div>
+                    <div class="bottomUiDisplay">
+                        <div class="pDisplay" id="p1NameDisplay"></div>
+                        <div class="pDisplay" id="p2NameDisplay"></div>
+                    </div>
+                </div>
+                <div class="gameboardDisplay">
+                    <div class="gameboardGrid" id="gameBoard">
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                        <div class="grid-item"></div>
+                    </div>
+                </div>
+                <div class="resetArea">
+                    <div class="resetBtn" id="resetBtn">
+                        Reset
+                    </div>
+                </div>
+            </div>
+            <div class="winnerScreen" id="winnerDisplay">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

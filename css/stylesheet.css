@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  position: relative;
+}
+.container .beforeStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: inherit;
+  position: absolute;
+  z-index: 10;
+}
+.container .beforeStart .p1Name {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 0.5rem 1rem;
+}
+.container .beforeStart .p2Name {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem 1.5rem 1rem;
+}
+.container .beforeStart textarea {
+  resize: none;
+  height: 1rem;
+  padding: 0.5rem;
+  background-color: black;
+  color: white;
+}
+.container .beforeStart textarea:focus {
+  outline: none;
+  caret-color: white;
+}
+.container .beforeStart .startBtn {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1rem;
+  border: 1px solid white;
+}
+.container .beforeStart .startBtn:active {
+  background-color: rgba(211, 211, 211, 0.363);
+}
+.container .beforeStart .startBtn:hover {
+  cursor: pointer;
+}
+.container .loading {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  opacity: 0;
+}
+.container .loading .loadBar {
+  height: 2rem;
+  width: 0%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .afterStart {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  opacity: 0;
+}
+.container .afterStart .uiDisplay {
+  height: 15rem;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .afterStart .uiDisplay .upperUiDisplay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .afterStart .uiDisplay .upperUiDisplay .turnIndicator {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 40rem;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem 0 1rem 0;
+}
+.container .afterStart .uiDisplay .bottomUiDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container .afterStart .uiDisplay .bottomUiDisplay .pDisplay {
+  height: 3rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 6rem 0.5rem 6rem;
+}
+.container .afterStart .gameboardDisplay {
+  height: 85%;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.container .afterStart .gameboardDisplay .gameboardGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: inherit;
+  width: 30%;
+  margin-top: 2rem;
+}
+.container .afterStart .gameboardDisplay .gameboardGrid .grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed white;
+  font-size: 5rem;
+}
+.container .afterStart .resetArea {
+  height: 5rem;
+  width: inherit;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .afterStart .resetArea .resetBtn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 1px white solid;
+  padding: 1.5rem;
+}
+.container .afterStart .resetArea .resetBtn:active {
+  background-color: rgba(211, 211, 211, 0.363);
+}
+.container .afterStart .resetArea .resetBtn:hover {
+  cursor: pointer;
+}
+.container .winnerScreen {
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 1;
+  opacity: 0;
+}/*# sourceMappingURL=stylesheet.css.map */
